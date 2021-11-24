@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Outfit&display=swap');
+
+:root{
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    }
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--dark-cyan);
+    background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    background-color: white;
+    border-radius: 15px;
+    width: 326px;
+    overflow: hidden;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.297);
+   
+    
+
+    &-header-img{
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+
+    &-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid #999;
+
+        &-img{
+            border: 5px solid white;
+            border-radius: 50%;
+            margin-top: calc(-48px - 5px);
+            z-index: 5;
+            background-color: white;
+            
+        }
+        
+        &-title{
+            margin-top: 2rem;
+            font-size: 1.8rem;
+
+            span{
+                color: var(--Dark-gray);
+                font-weight:400;
+               
+            }
+        }
+
+        &-city{
+            color: var(--Dark-gray);
+            font-size: 1.6rem;
+            margin-bottom: 2rem;margin-top: 0;        }
+    }
+
+    &-footer{
+        display: flex;
+        justify-content: space-around;
+        
+        &-social{
+            text-align: center;
+            padding-top: 10px;
+
+            h3{
+                font-weight: 700;
+                font-size: 1.8rem;
+            }
+            p{
+                color: var(--Dark-gray);
+                font-size: 1rem;
+                font-weight: 400;
+                margin-top: -10px;
+                padding-bottom: 1.5rem;
+                letter-spacing: 1px;
+            }
+        } 
+        
+    }
+}
+
+
